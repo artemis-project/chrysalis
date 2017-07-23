@@ -1,3 +1,3 @@
 # Chrysalis
-![CFM](Chrysalis File Manager.png)
+![CFM](Chrysalis%20File%20Manager.png)
 Official file manager for Artemis
