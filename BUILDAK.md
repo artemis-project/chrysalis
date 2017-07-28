@@ -2,7 +2,7 @@
 This document will go over how to install the proper packages required to build apps with AliceKit enabled.
 
 ## What's AliceKit?
-![Alice Angel](http://artemis-project.github.io/assets/images/aliceangel.png)
+![AliceKit icon](http://artemis-project.github.io/assets/images/apps/alicekit.png)
 
 **AliceKit** is a collecton of libraries and tools used to create wonderful apps and extensions using Swift and Qt. It includes the following (but not limited to):
 * [Qlift](http://www.github.com/longhanks/qlift) - the binding used to link Swift and Qt together
