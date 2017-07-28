@@ -1,3 +1,5 @@
 #!/bin/bash
 
+# This is basically an alias, because I'm lazy. Use it if you want.
+
 ./.build/debug/chrysalis
