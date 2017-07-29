@@ -8,46 +8,39 @@
 
 */
 
+//Important AliceKit imports
 import Glibc
 import Foundation
 import Qlift
 
-
-class ChrysalisFM {
-    let app = QApplication()
-    let window = QMainWindow()
-    let mainWidg = QWidget()
-    var layout: QHBoxLayout
-    var v_layout: QVBoxLayout
-    var button: QPushButton
-
-    init() {
-        self.layout = QHBoxLayout(parent: self.mainWidg)
-        self.v_layout = QVBoxLayout()
-        self.button = QPushButton(text: "Add Col")
-
-        self.layout.add(widget: self.button)
-        self.layout.add(layout: self.v_layout)
-
-        self.addCol(label: "Init")
-    }
-
-    func addCol(label: String) {
-        self.v_layout.add(widget: QLabel(text: label))
-    }
-
-    func run() -> Int32 {
-        print("Entering main()")
-        self.window.centralWidget = self.mainWidg
-        print("Main Widget added")
-        self.window.show()
-        print("Event loop starting")
-        return self.app.exec()
-    }
+//Create an object from the MainWindowController.swift
+class ChrysalisFM: MainWindowController {
+  override init() {
+      super.init()
+  }
 }
 
-let app = ChrysalisFM()
-exit(app.run())
+//The primary function to open the window
+func main() -> Int32 {
+  // Create a Qt application and MainWindow object
+  print("Running AliceKit and looking for Qt...")
+  let application = QApplication()
+  let mainWindow = ChrysalisFM()
+  let mainWidg = QWidget()
+
+  //Show the contents of MainWindow
+  print("Qt found and running. Turning on Swift Machine...")
+  mainWindow.centralWidget = mainWidg
+  mainWindow.show()
+  print("Done. Presenting content...")
+  return application.exec()
+  print("Ready for action.")
+}
+
+//Exit the application
+exit(main())
+print("Turning off Swift Machine and cleaning up any leftover ink...")
+print("Done.")
 
 
 var fm = FileManager()
