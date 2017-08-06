@@ -15,6 +15,6 @@ import PackageDescription
 let package = Package(
     name: "chrysalis",
     dependencies: [
-        .Package(url: "https://github.com/Longhanks/qlift", Version(0, 0, 37))
+        .Package(url: "https://github.com/Longhanks/qlift", Version(0, 0, 39))
     ]
 )
